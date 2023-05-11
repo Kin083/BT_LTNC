@@ -1,11 +1,9 @@
 #include <iostream>
-
+using namespace std;
 #define MAX 1001
 
-using namespace std;
-
 int n, queen[MAX];
-bool mD[MAX], sD[MAX], Col[MAX];    //check main, sub diagon and collumn
+bool mD[MAX], sD[MAX], Col[MAX];
 
 void print()
 {
@@ -18,7 +16,7 @@ void print()
     }
     cout << endl;
 }
-//put queen at row x - col ...
+
 void setUpQueen(int i)
 {
     if(i == n + 1) print();
@@ -45,6 +43,5 @@ int main()
         }
     }
     setUpQueen(1);
-
     return 0;
 }
